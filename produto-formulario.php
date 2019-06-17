@@ -8,6 +8,14 @@ verificaUsuario();
 $categorias = listaCategorias($conexao);
 ?> 
 
+<?php if(isset($_GET["sair"]) && $_GET["sair"] == true) { ?>
+	<p class="alert-danger">Você saiu do sistema.</p>
+	<?php 
+		unset($_COOKIE["usuario_logado"]);
+		die();
+	?>
+<?php } ?>
+
 <h1>Formulário de produto</h1>
 <form action="adiciona-produto.php" method="post">
 	<table class="table">

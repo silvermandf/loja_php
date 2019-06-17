@@ -1,7 +1,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Minha Loja</title>
+	<title>Sobre a Loja</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"> 
 	<link rel="stylesheet" type="text/css" href="css/loja.css"> 
 </head>
@@ -16,10 +16,10 @@
 					<li><a href="produto-formulario.php">Adiciona Produto</a></li>
 					<li><a href="produto-lista.php">Produtos</a></li>
 					<li><a href="sobre.php">Sobre</a></li>
+					<li><a href="logout.php?sair=true">Sair</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
-
 	<div class="container">
 		<div class="principal">
