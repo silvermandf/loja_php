@@ -36,7 +36,13 @@ include("logica-usuario.php");
 				<tr>
 					<td><button class="btn btn-primary">Login</button></td>
 				</tr>
-			</table>
+				<tr>
+					<div class="alert alert-primary" role="alert">
+  					Ainda não possui uma conta? <a href="cadastro-formulario.php" class="alert-link">Clique aqui</a> e cadastre-se.
+					</div>
+				</tr>
+			</table>			
 		</form>
+
 	<?php } ?>
 <?php include("rodape.php"); ?>

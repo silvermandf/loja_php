@@ -12,5 +12,5 @@ function usuarioLogado() {
     return $_COOKIE["usuario_logado"];
 }
 function logaUsuario($email) {
-    setcookie("usuario_logado", $email, time() + 600); //desloga em 1 hora
+    setcookie("usuario_logado", $email, time() + 300); //desloga em meia hora
 }
