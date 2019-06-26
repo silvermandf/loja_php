@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 11-Set-2018 às 05:26
+-- Generation Time: 26-Jun-2019 às 02:56
 -- Versão do servidor: 10.1.30-MariaDB
 -- PHP Version: 7.2.1
 
@@ -64,7 +64,7 @@ CREATE TABLE `produtos` (
 
 INSERT INTO `produtos` (`id`, `nome`, `preco`, `descricao`, `categoria_id`, `usado`) VALUES
 (4, 'LÃ¡pis', '2.00', 'LÃ¡pis melhorado, com borracha.', 2, 0),
-(8, 'Ps4', '1200.00', 'PS4 FAT com dois controles e 1 jogo em mÃ­dia fÃ­sica.', 1, 1),
+(8, 'Ps4', '1205.00', 'PS4 FAT com dois controles e 1 jogo em mÃ­dia fÃ­sica.', 1, 1),
 (11, 'Carro', '40000.00', 'Descrição do produto...', 3, 0),
 (14, 'Spider-man', '199.00', 'Descrição do produto...', 3, 0),
 (15, 'Anthem', '199.00', 'Jogo totalmente futurÃ­stico, ultramente foda e diferenciado!', 3, 0),
@@ -75,7 +75,8 @@ INSERT INTO `produtos` (`id`, `nome`, `preco`, `descricao`, `categoria_id`, `usa
 (22, 'Fusca verde', '2000.00', 'Fusca verde oliva, bem conservado, com sabor de limÃ£o.', 3, 1),
 (23, 'Bola de Futebol', '180.00', 'Bola de Futebol Jabulani. Excelente investimento. Esta bola foi usada na copa 2010 - Ãfrica', 1, 1),
 (24, 'Audi a4', '20000.00', 'Audi a4 bem batido', 3, 1),
-(25, 'pudim de chocolate', '6.00', 'Pudim de chocolate branco e preto, delicioso.', 4, 0);
+(25, 'pudim de chocolate', '6.00', 'Pudim de chocolate branco e preto, delicioso.', 4, 0),
+(26, 'Monitor Gamer AOC', '2230.00', 'Monitor Gamer com taxa de atualizaÃ§Ã£o 144hz.', 1, 0);
 
 -- --------------------------------------------------------
 
@@ -86,15 +87,19 @@ INSERT INTO `produtos` (`id`, `nome`, `preco`, `descricao`, `categoria_id`, `usa
 CREATE TABLE `usuarios` (
   `id` int(11) NOT NULL,
   `email` varchar(255) DEFAULT NULL,
-  `senha` varchar(255) DEFAULT NULL
+  `senha` varchar(255) DEFAULT NULL,
+  `nome` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `usuarios`
 --
 
-INSERT INTO `usuarios` (`id`, `email`, `senha`) VALUES
-(1, 'wendel2099@hotmail.com', 'e10adc3949ba59abbe56e057f20f883e');
+INSERT INTO `usuarios` (`id`, `email`, `senha`, `nome`) VALUES
+(1, 'wendel2099@hotmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'Wendel Silva'),
+(2, 'max2099@hotmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'Max AmÃ¢ncio Silva'),
+(3, 'max2099@hotmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'Max AmÃ¢ncio Silva'),
+(4, 'malu2099@hotmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'Maria LuÃ­za');
 
 --
 -- Indexes for dumped tables
@@ -132,13 +137,13 @@ ALTER TABLE `categorias`
 -- AUTO_INCREMENT for table `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
