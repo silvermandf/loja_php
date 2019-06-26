@@ -16,7 +16,10 @@
 					<li><a href="produto-formulario.php">Adiciona Produto</a></li>
 					<li><a href="produto-lista.php">Produtos</a></li>
 					<li><a href="sobre.php">Sobre</a></li>
-					<li><a href="logout.php?sair=true">Sair</a></li>
+					<?php if(isset($_COOKIE["usuario_logado"]) && $_COOKIE["usuario_logado"] == true) { ?>
+							<li><a href="logout.php?sair=true">Sair</a></li> 
+					<?php } ?>
+
 				</ul>
 			</div>
 		</div>

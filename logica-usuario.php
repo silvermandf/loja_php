@@ -2,6 +2,7 @@
 function usuarioEstaLogado() {
     return isset($_COOKIE["usuario_logado"]);
 }
+
 function verificaUsuario() {
     if(!usuarioEstaLogado()) {
         header("Location: index.php?falhaDeSeguranca=true");
