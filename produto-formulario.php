@@ -53,4 +53,4 @@ $categorias = listaCategorias($conexao);
 	</table>
 </form>
 
-<?php include("rodape.php") ?>
+<?php require_once("rodape.php") ?>

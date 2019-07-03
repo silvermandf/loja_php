@@ -27,4 +27,4 @@ if(insereProduto($conexao, $nome, $preco, $descricao, $categoria_id, $usado)) { 
 } 
 ?>
 
-<?php include("rodape.php"); ?>  
+<?php require_once("rodape.php"); ?>  

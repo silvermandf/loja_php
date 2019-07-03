@@ -22,4 +22,3 @@ function alteraUsuario($conexao, $id, $nomeUsuario, $emailUsuario, $senhaUsuario
 			  WHERE id =  '{$id}'";
 }
 
-?>

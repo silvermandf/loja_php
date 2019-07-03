@@ -17,4 +17,4 @@ if(insereUsuario($conexao, $nomeUsuario, $emailUsuario, $senhaUsuario)) { ?>
 } 
 ?>
 
-<?php include("rodape.php"); ?>  
+<?php require_once("rodape.php"); ?>  

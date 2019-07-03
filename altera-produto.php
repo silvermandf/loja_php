@@ -26,4 +26,4 @@ require_once("banco-produto.php");
 	} 
 ?>
 
-<?php include("rodape.php"); ?>  
+<?php require_once("rodape.php"); ?>  
