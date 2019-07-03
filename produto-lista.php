@@ -26,8 +26,7 @@
 	<?php
 		$produtos = listaProdutos($conexao);
 		foreach($produtos as $produto) :
-			$usado = $produto['usado'] ? "Usado" : "Novo";
-			
+			$usado = $produto['usado'] ? "Usado" : "Novo";			
 	?>	
 		<tbody>
 			<tr>
