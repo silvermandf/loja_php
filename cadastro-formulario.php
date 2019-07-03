@@ -1,4 +1,4 @@
-<?php include("cabecalho.php"); ?>
+<?php require_once("cabecalho.php"); ?>
 
 <h1>Formulário de cadastro de usuário</h1>
 <form action="cadastra-usuario.php" method="post">

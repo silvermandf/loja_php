@@ -1,10 +1,11 @@
-<?php include("cabecalho.php"); ?>
-<?php include("conecta.php"); ?>
-<?php include("banco-produto.php"); ?>
-<?php include("banco-categoria.php"); ?>
-<?php include("logica-usuario.php"); ?>
-
 <?php 
+require_once("cabecalho.php"); 
+require_once("banco-produto.php"); 
+require_once("banco-categoria.php");
+require_once("logica-usuario.php"); 
+?>
+
+<?php
 	if(array_key_exists("removido", $_GET) && $_GET["removido"] == "true") :
 ?>
 		<p class="alert-success"> Produto apagado com sucesso.</p>
@@ -25,6 +26,8 @@
 	</thead>
 	<?php
 		$produtos = listaProdutos($conexao);
+		sort($produtos); // ordena os produtos em ordem crescente do id, ou seja, na ordem que foram inseridos
+
 		foreach($produtos as $produto) :
 			$usado = $produto['usado'] ? "Usado" : "Novo";			
 	?>	

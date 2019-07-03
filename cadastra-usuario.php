@@ -1,6 +1,6 @@
-<?php include("cabecalho.php"); 
-include("conecta.php"); 
-include("banco-usuario.php"); 
+<?php 
+require_once("cabecalho.php"); 
+require_once("banco-usuario.php"); 
 
 $nomeUsuario = $_POST["nomeUsuario"];
 $emailUsuario = $_POST["emailUsuario"];

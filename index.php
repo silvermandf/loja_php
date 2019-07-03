@@ -1,5 +1,6 @@
-<?php include("cabecalho.php"); 
-include("logica-usuario.php");
+<?php 
+require_once("cabecalho.php"); 
+require_once("logica-usuario.php");
 
  if(isset($_GET["login"]) && $_GET["login"] == true) { ?>
 	<p class="alert-success">Logado com sucesso!</p>
